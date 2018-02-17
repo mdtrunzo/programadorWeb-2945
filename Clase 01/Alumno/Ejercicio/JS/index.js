@@ -12,7 +12,7 @@ var number = 4
 
 var parsedAge = parseInt (age, 10)
 
-console.log(parsedAge + number)
+console.log("La suma es=", parsedAge + number)
 
 //3
 
@@ -22,7 +22,7 @@ var number2 = 10
 
 var parsedAge2 = parseInt (age2, 10)
 
-console.log(parsedAge2 - number2)
+console.log("La resta es=", parsedAge2 - number2)
 
 //4
 
