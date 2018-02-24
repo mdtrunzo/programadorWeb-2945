@@ -13,3 +13,15 @@ for(var i = 0; i < daysOfTheWeek.length; i++){
 }
   
 
+/*
+var value
+
+do{
+  value = prompt('Ingrese un valor mayor a 5')
+
+}while(value <= 5)
+
+console.log(value)
+
+*/
+
