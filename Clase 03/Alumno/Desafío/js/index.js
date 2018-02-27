@@ -72,7 +72,7 @@ function sum(parsedNumber, parsedNumber2) {
       case "division":
       console.log("la división es: ", parsedNumber / parsedNumber2)
       if (parsedNumber === 0 || parsedNumber2 === 0 ){
-        console.log(prompt("El número ingresado no puede ser igual a 0"))
+        console.log(alert("El número ingresado no puede ser igual a 0"))
     }
       break
       case "Multiplicación": 
@@ -80,6 +80,9 @@ function sum(parsedNumber, parsedNumber2) {
       case "Multiplicacion":
       case "multiplicacion":
       console.log("La multiplicación es: ", parsedNumber * parsedNumber2)
+      break
+      default:
+      console.log(Operation + ' es un valor invalido')
       break
     }
   }
