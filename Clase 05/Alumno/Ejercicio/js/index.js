@@ -7,7 +7,7 @@ var student = {
   address: 'Martin Fierro 1234'
 }
 
-function Student (firstName, lastName, age) {
+function Student (firstName, lastName, age, address) {
   this.showFullName = function () {
     return firstName + ' ' + lastName
   }
