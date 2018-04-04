@@ -1,72 +1,72 @@
-var movies = [
-  {
-    movieName: 'El lobo de Wall Street',
-    movieDirector: 'Martin Scorsece',
-    year: '2013',
-    actors: {
-      actorOne: 'Leonardo Di Caprio',
-      actorTwo: 'Margot Robbie'
-    }
-  },
-  {
-    movieName: 'Birdman',
-    movieDirector: 'Alejandro Gonzalez Iñarritu',
-    year: '2014',
-    actors: {
-      actorOne: 'Michael Keaton',
-      actorTwo: 'Edward Norton'
-    }
-  },
-  {
-    movieName: 'La forma del agua',
-    movieDirector: 'Guillermo del Toro',
-    year: '2017',
-    actors: {
-      actorOne: 'Sally Hawkins',
-      actorTwo: 'Michael Shannon'
-    }
-  },
-  {
-    movieName: 'La La Land',
-    movieDirector: 'Damien Chazelle',
-    year: '2016',
-    actors: {
-      actorOne: 'Ryan Gosling',
-      actorTwo: 'Emma Stone'
-    }
-  },
-  {
-    movieName: 'Spotlight',
-    movieDirector: 'Tom McCarthy',
-    year: '2015',
-    actors: {
-      actorOne: 'Mark Ruffalo',
-      actorTwo: 'Michael Keaton'
-    }
-  }
-]
-
-function movieConstructor (movieName, movieDirector, year, actors, id) {
+function Movie (title, year, director, actors) {
   var id = Math.random()
+  var createdAt = new Date()
+  var updatedAt = null
 
-  this.showFullCast = function () {
-    console.log(actorOne + ' ' + actorTwo)
+  this.setTitle = function (newTitle) {
+    title = newTitle
+    updatedAt = new date()
   }
-  this.getId = function () {
-    return id
+
+  this.setYear = function (newYear) {
+    year = newYear
+    updatedAt = new date()
+  }
+
+  this.setDirector = function (newDirector) {
+    director = newDirector
+    updatedAt = new date()
+  }
+
+  this.setActor = function (actor) {
+    actors.push(actor)
+    updatedAt = new Date()
+  }
+  this.getTitle = function () {
+    return title
+  }
+  this.getYear = function () {
+    return year
+  }
+  this.getDirector = function () {
+    return director
+  }
+  this.getActors = function () {
+    return actors
+  }
+  this.getUpdatedAt = function () {
+    return updatedAt
+  }
+  this.showInfo = function () {
+    console.log(
+      'Titúlo: ' +
+        title +
+        ', Año: ' +
+        year +
+        ', Director: ' +
+        director +
+        ', Actores: ' +
+        actors.join(' / ') +
+        ', Fecha de creación: ' +
+        createdAt +
+        ', Fecha de modificación: ' +
+        updatedAt
+    )
   }
 }
 
-for (var i = 0; i < movies.length; i++) {
-  var movie = movies[i]
-  var objMovies = new movieConstructor(
-    movies.movieName,
-    movies.movieDirector,
-    movies.year,
-    movies.actors
-  )
-  objMovies.showFullCast()
-  console.log(objMovies)
-}
+var birdman = new Movie('Birdman', '2015', 'Alejandro Gonzalez Iñarritu', [
+  'Michael Keaton'
+])
 
-movieConstructor(movieName, movieDirector, year, actors, id)
+birdman.showInfo()
+
+birdman.setActor('Edward Norton')
+
+birdman.setActor('Emma Stone')
+
+var newActor = prompt('Ingrese otro actor')
+
+birdman.setActor(newActor)
+
+birdman.showInfo()
