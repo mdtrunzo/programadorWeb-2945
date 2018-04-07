@@ -57,6 +57,7 @@ function createStudentNodeExtended (student) {
 
 function validateButtonSimple () {
   var validFields = document.getElementsByClassName('is-valid')
+
   // VE: Valido por 4 campos
   if (validFields.length === 4) {
     addStudentButton.disabled = false
@@ -106,7 +107,7 @@ document.getElementById('dni').onblur = function (event) {
 
   var value = dniNode.value
 
-  parsedDni = parseInt(value, 10)
+  var parsedDni = parseInt(value, 10)
 
   if (
     parsedDni &&
@@ -159,7 +160,7 @@ addStudentButton.onclick = function (event) {
   var dniNode = document.getElementById('dni')
   var emailNode = document.getElementById('email')
 
-  parsedDni = parseInt(dniNode.value, 10)
+  var parsedDni = parseInt(dniNode.value, 10)
 
   addStudentExtended(
     firstNameNode.value,
@@ -188,7 +189,7 @@ document.getElementById('deleteDni').onblur = function (event) {
 
   var value = dniNode.value
 
-  parsedDni = parseInt(value, 10)
+  var parsedDni = parseInt(value, 10)
 
   if (searchIndexByDni(parsedDni) !== -1) {
     deleteStudentButton.disabled = false
@@ -210,7 +211,7 @@ deleteStudentButton.onclick = function () {
 
   mainList.removeChild(studenNode)
 
-  parsedDni = parseInt(dni, 10)
+  var parsedDni = parseInt(value, 10)
 
   var studentsList = getLocalStorageList()
 
