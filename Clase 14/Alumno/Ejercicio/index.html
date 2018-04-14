@@ -14,13 +14,30 @@
     crossorigin="anonymous"></script>
   <link rel="tab icon" href="./favicon.png">
   <title>Clase 14 - Ejercicio</title>
-</head>
+  <style>
+  body{
+    background-color: rgb(202, 19, 80);
+  }
+.contador{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top:200px;
+  background-color: palevioletred;
+  width: 300px;
+  margin: auto;
+  border-radius: 50px;
+  box-shadow:0 -1px 47px 15px;
+  }
+  h1{
+    font-size: 200px;
+  }
+  </style>
 </head>
 <body>
-  <h1 id="counter">CONTADOR</h1>
-  <div id="contador" style= "font-size: 100px;">
-
-  </div>
+  <div class="contador">
+  <h1 id="counter">0</h1>
+</div>
   <script src="js/index.js"></script>
 </body>
 </html>

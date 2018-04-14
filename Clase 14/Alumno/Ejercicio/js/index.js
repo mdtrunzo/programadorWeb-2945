@@ -1,6 +1,21 @@
 $(document).ready(function () {
-  $('#contador').html('<span>0</span>')
+  var count = 0
+
   $(window).keydown(function (event) {
-    var keypress = event.which
+    var keyPress = event.which
+    switch (keyPress) {
+      case 13:
+        $('#counter').html('0')
+        count = 0
+        break
+      case 38:
+        count++
+        $('#counter').html(count)
+        break
+      case 40:
+        count--
+        $('#counter').html(count)
+        break
+    }
   })
 })
