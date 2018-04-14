@@ -1,20 +1,22 @@
+var REQUIRED_FIELD = 'Campo Obligatorio'
+
 $(document).ready(function () {
-  $('#home').click(function () {
+  $('#home').on('click', function () {
     console.log('Me hicieron click')
     $('#root').load('../partials/home.html', function () {
       console.log('Load partial main')
     })
   })
 
-  $('#contact').click(function () {
+  $('#contact').on('click', function () {
     console.log('me hicieron otro click')
     $('#root').load('../partials/contacto.html', function () {
-      $('#submitButton').click(function () {
+      $('#submitButton').on('click', function () {
         $('#root').load('../partials/greetings.html')
       })
     })
   })
-  $('#greetingsButton').click(function () {
+  $('#greetingsButton').on('click', function () {
     $('#root').load('../partials/home.html', function () {})
   })
 })

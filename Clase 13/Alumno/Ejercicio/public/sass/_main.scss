@@ -1,9 +1,14 @@
 body {
   background-image: url(../img/back.jpg);
   color: white;
+  font-family: 'Gamja Flower', cursive;
 }
 main {
   padding-top: 40px;
+}
+nav ul li {
+  font-size: 40px;
+  padding-right: 40px;
 }
 .starter-template {
   padding: 40px 15px;

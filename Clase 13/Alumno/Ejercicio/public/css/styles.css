@@ -1,94 +1,102 @@
 @import url(../bower_components/bootstrap/dist/css/bootstrap.min.css);
+@import url("https://fonts.googleapis.com/css?family=Gamja+Flower");
 /* line 1, ../sass/_main.scss */
 body {
   background-image: url(../img/back.jpg);
   color: white;
+  font-family: 'Gamja Flower', cursive;
 }
 
-/* line 5, ../sass/_main.scss */
+/* line 6, ../sass/_main.scss */
 main {
   padding-top: 40px;
 }
 
-/* line 8, ../sass/_main.scss */
+/* line 9, ../sass/_main.scss */
+nav ul li {
+  font-size: 40px;
+  padding-right: 40px;
+}
+
+/* line 13, ../sass/_main.scss */
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
 
-/* line 13, ../sass/_main.scss */
+/* line 18, ../sass/_main.scss */
 .logo {
   display: inline-block;
   margin: 20px 15px 0 15px;
 }
 
-/* line 18, ../sass/_main.scss */
+/* line 23, ../sass/_main.scss */
 #main-logo {
   float: left;
   margin-right: 15px;
 }
 
-/* line 22, ../sass/_main.scss */
+/* line 27, ../sass/_main.scss */
 .brand-name {
   color: #fff !important;
 }
 
-/* line 25, ../sass/_main.scss */
+/* line 30, ../sass/_main.scss */
 #navbar {
   float: right;
 }
 
-/* line 28, ../sass/_main.scss */
+/* line 33, ../sass/_main.scss */
 #jquery-logo {
   width: 122px;
 }
 
-/* line 31, ../sass/_main.scss */
+/* line 36, ../sass/_main.scss */
 #bootstrap-logo {
   width: 54px;
 }
 
-/* line 34, ../sass/_main.scss */
+/* line 39, ../sass/_main.scss */
 #sass-logo {
   width: 62px;
 }
 
-/* line 37, ../sass/_main.scss */
+/* line 42, ../sass/_main.scss */
 #yeoman-logo {
   width: 75px;
 }
 
-/* line 40, ../sass/_main.scss */
+/* line 45, ../sass/_main.scss */
 #npm-logo {
   width: 70px;
 }
 
-/* line 43, ../sass/_main.scss */
+/* line 48, ../sass/_main.scss */
 #grunt-logo {
   width: 63px;
 }
 
-/* line 46, ../sass/_main.scss */
+/* line 51, ../sass/_main.scss */
 #bower-logo {
   width: 63px;
 }
 
-/* line 49, ../sass/_main.scss */
+/* line 54, ../sass/_main.scss */
 #compass-logo {
   width: 63px;
 }
 
-/* line 52, ../sass/_main.scss */
+/* line 57, ../sass/_main.scss */
 .cols-margin {
   margin-top: 42px;
 }
 
-/* line 55, ../sass/_main.scss */
+/* line 60, ../sass/_main.scss */
 .gray-text {
   color: #a5a5a5;
 }
 
-/* line 58, ../sass/_main.scss */
+/* line 63, ../sass/_main.scss */
 .docs-btn {
   background-color: #bc24d9;
   border-color: #8d1ba2;
@@ -98,10 +106,8 @@ main {
   margin-top: 27px;
   line-height: 2em;
 }
-/* line 67, ../sass/_main.scss */
-.docs-btn:hover,
-.docs-btn:active,
-.docs-btn:focus {
+/* line 72, ../sass/_main.scss */
+.docs-btn:hover, .docs-btn:active, .docs-btn:focus {
   background-color: #8d1ba2 !important;
   border-color: #8d1ba2 !important;
 }
