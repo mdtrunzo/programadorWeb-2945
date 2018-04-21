@@ -10,4 +10,13 @@ $('.square').click(function () {
 })
 
 deleteStudentButton.disabled = false
-$('#deleteStudentButton').click()
+
+$('#deleteStudentButton').onclick = function () {
+  var circleNode = $('.circle')
+
+  var value = circleNode.value
+
+  circleNode.removeChild()
+
+  circleNode.value = ''
+}
