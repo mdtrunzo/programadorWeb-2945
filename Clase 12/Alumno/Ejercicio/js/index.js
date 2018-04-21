@@ -8,3 +8,6 @@ $('.square').click(function () {
   }
   player = !player
 })
+
+deleteStudentButton.disabled = false
+$('#deleteStudentButton').click()
