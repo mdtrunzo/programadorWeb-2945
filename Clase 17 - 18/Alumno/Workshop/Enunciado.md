@@ -6,7 +6,7 @@
       - Cargarse al inicio y al tocar el link a home.
    - Personajes: 
       - Buscar los personajes en la API y mostrarlos en pantalla en una tabla, la carga de personajes tiene que hacerse mediante paginación.. 
-      - Traducir el género, el color de ojos mostrar la altura en cm, el peso en kg y en cada fila el número de orden en que se cargo el personaje. 
+      - Traducir el género, el color de ojos, mostrar la altura en cm, el peso en kg y en cada fila el número de orden en que se cargo el personaje. 
       - Deberá tener un botón que al presionarlo guarde el personaje en el localStorage si este no existe y lo borre de la tabla.      
    - Guardados: 
       - Mostrar los personajes que están almacenados en el localStorage.
@@ -15,15 +15,15 @@
    - Contacto:
       - Deberá tener un formulario que valide que ninguno de los campos esten vacíos y que el campo mail cumpla con el formato minímo (un @ y un .). La validación tiene que hacerse al perder foco y luego dinámicamente en cada cambio.
   - La carga de todas las secciones debe ser dinámica usando la función `.load()` de jQuery.
-  - Se deberán aplicar los conceptos de controlador y export module para organizar el proyecto.
+  - Se deberán aplicar los conceptos de Single Page Application, controlador y export module para organizar el proyecto.
 
 [Video ejemplo](https://www.useloom.com/share/079626a0720c49f5825e5aadca9adc6a)
 
 # Versión extendida
 
-- Filtrar los personajes que ya están en el localStorage para no mostrarlos en la table de personajes.
+- Filtrar los por los datos que ya están guardados en el localStorage para no mostrarlos en la table de personajes.
 
-- Agregar un input que permita buscar desde la barra principal usando la funcionalidad de búsqueda de la API. Cargar el resultado de la búsqueda en una tabla al igual que el resto de las páginas.
+- Agregar un input que permita buscar desde la barra principal usando la funcionalidad de búsqueda de la API. Cargar el resultado de la búsqueda en una tabla en el contenedor principal al igual que el resto de las páginas.
 
 **Documentación**
 
@@ -35,7 +35,7 @@
 
 > En la carpeta Recursos se encuentran algunos de los archivos necesarios para realizar el proyecto.
 
-> Recordá reemplazar las dependencias en el archivo bower.json luego de crear el repositorio con el generador de Yeoman con estas para tener la última versión de jQuery y de Bootstrap:
+> Recordá reemplazar las dependencias en el archivo bower.json luego de crear el repositorio con el generador de Yeoman para tener la última versión de jQuery y de Bootstrap:
 
 ```json
   "dependencies": {
