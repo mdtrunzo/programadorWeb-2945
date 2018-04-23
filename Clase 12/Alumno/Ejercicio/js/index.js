@@ -1,22 +1,16 @@
-var player = true
+$(document).ready(function () {
+  var player = true
 
-$('.square').click(function () {
-  if (player) {
-    $(this).addClass('circle')
-  } else {
-    $(this).addClass('cross')
-  }
-  player = !player
+  $('.square').click(function () {
+    if (player) {
+      $(this).addClass('circle')
+    } else {
+      $(this).addClass('cross')
+    }
+    player = !player
+  })
+
+  $('button').click(function () {
+    $('.square').removeClass('circle') && $('.square').removeClass('cross')
+  })
 })
-
-deleteStudentButton.disabled = false
-
-$('#deleteStudentButton').onclick = function () {
-  var circleNode = $('.circle')
-
-  var value = circleNode.value
-
-  circleNode.removeChild()
-
-  circleNode.value = ''
-}

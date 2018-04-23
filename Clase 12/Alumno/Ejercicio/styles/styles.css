@@ -3,7 +3,6 @@
   height: 300px;
   margin: 100px auto;
 }
-
 .squaresSubContainer {
   display: flex;
 }
@@ -29,4 +28,5 @@
 }
 .btn {
   margin-top: 30px;
+  cursor: pointer;
 }
