@@ -1,13 +1,13 @@
 var AjaxCall = (function () {
   var exposed = {}
 
-  exposed.getData = function (url, cbk) {
+  exposed.getData = function (url, callBack) {
     $.ajax(url)
       .done(function (data) {
-        cbk(null, data)
+        callBack(null, data)
       })
       .fail(function (error) {
-        cbk(error)
+        callBack(error)
       })
   }
 
