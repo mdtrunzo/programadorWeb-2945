@@ -1,22 +1,23 @@
 $(document).ready(function () {
   var url = 'https://swapi.co/api/planets/'
-
-  AjaxCall.getData(url, showPlanetsNames)
+  AjaxCall.getData(url, showPlanetsName)
 })
 
-function showPlanetsNames (error, data) {
+function showPlanetsName (error, data) {
   if (!error) {
     var planets = data.results
     for (var i = 0; i < planets.length; i++) {
-      planet = planets[i]
-      console.log(planets.name)
+      var planet = planets[i]
+      console.log(planet.name)
     }
     if (data.next) {
-      $('#showMore').one('click', function () {
-        AjaxCall.getData(data.next, showPlanetsNames)
+      $('#botonMostrar').one('click', function () {
+        AjaxCall.getData(data.next, showPlanetsName)
       })
     } else {
-      $('#showMore').attr('disabled', true)
+      $('#botonMostrar').attr('disabled', true)
     }
+  } else {
+    console.log('Hay un error', error)
   }
 }
