@@ -208,19 +208,7 @@ function CreateCaracterTable (caracter, index) {
   var eyeColor = translateEyeColor(caracter.eye_color)
 
   return (
-    '<tr><th scope="row">' +
-    (index + 1) +
-    '</th><td>' +
-    caracter.name +
-    '</th><td>' +
-    gender +
-    '</th><td>' +
-    caracter.height +
-    ' cm </th><td>' +
-    caracter.mass +
-    ' kg </th><td>' +
-    eyeColor +
-    '</td></tr>'
+  
   )
 }
 
